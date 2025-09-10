@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MontaiguRH - Votre assistant RH externalisé. Solutions RH complètes pour TPE, PME et ETI. Gestion administrative, paie, recrutement et conseil RH.">
+    <meta name="keywords" content="RH, ressources humaines, externalisation RH, gestion paie, recrutement, conseil RH, TPE, PME, contrat de travail, CSE">
+    <meta name="author" content="MontaiguRH">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="favMRH.ico">
+    <link rel="apple-touch-icon">
+    <link rel="shortcut icon" href="favMRH.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.montaigurh.fr/">
+    <meta property="og:title" content="MontaiguRH - Votre assistant RH externalisé">
+    <meta property="og:description" content="Solutions RH complètes pour TPE, PME et ETI. Externalisation de la gestion administrative, paie, recrutement et conseil RH.">
+    <meta property="og:image" content="https://www.montaigurh.fr/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.montaigurh.fr/">
+    <meta property="twitter:title" content="MontaiguRH - Votre assistant RH externalisé">
+    <meta property="twitter:description" content="Solutions RH complètes pour TPE, PME et ETI. Externalisation RH sur-mesure.">
+    
+    <title>MontaiguRH - Votre assistant RH externalisé | Solutions TPE/PME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="https://www.montaigurh.fr/">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            padding-top: 80px;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        
+        .highlight {
+            background-color: var(--secondary);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            margin-top: 15px;
+        }
+        
+        .offer-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-header {
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .essential .card-header {
+            background-color: #95a5a6;
+        }
+        
+        .executive .card-header {
+            background-color: #7f8c8d;
+        }
+        
+        .premium .card-header {
+            background-color: #34495e;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #d35400;
+            border-color: #d35400;
+        }
+        
+        .btn-outline-primary {
+            border-color: var(--secondary);
+            color: var(--secondary);
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .included {
+            color: var(--success);
+            font-size: 1.2rem;
+        }
+        
+        .on-request {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+        
+        .pack-card {
+            border-left: 4px solid var(--secondary);
+            padding: 20px;
+            height: 100%;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .why-us-item {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .why-us-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .why-us-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .cta-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        /* Modal styles */
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+        }
+        
+        .modal-header {
+            background-color: var(--primary);
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        .modal-footer {
+            border-top: 1px solid #eee;
+        }
+        
+        .selected-offer {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .offer-details {
+            margin-bottom: 5px;
+        }
+        
+        .pack-option {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .pack-option:hover {
+            border-color: var(--secondary);
+            background-color: #fff9f5;
+        }
+        
+        .pack-option.selected {
+            border-color: var(--secondary);
+            background-color: #fff3e9;
+        }
+        
+        .form-check-input:checked {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .summary-total {
+            font-weight: bold;
+            border-top: 2px solid #eee;
+            padding-top: 10px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Team section */
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 5px solid #f8f9fa;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Testimonials */
+        .testimonials-container {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        .testimonials-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-card {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin: 0 15px;
+            width: 350px;
+            flex: 0 0 auto;
+            background-color: white;
+        }
+        
+        .testimonial-text {
+            position: relative;
+            padding: 20px 0;
+            font-style: italic;
+        }
+        
+        .testimonial-text:before {
+            content: """;
+            font-size: 60px;
+            color: #e67e22;
+            opacity: 0.2;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-family: Arial;
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+        }
+        
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .testimonial-nav button {
+            background: var(--secondary);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        
+        /* Cookie banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(44, 62, 80, 0.95);
+            color: white;
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                    }
+        
+        /* Schema.org markup */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* RDV button */
+        .rdv-button {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 999;
+            background-color: #00a2ff;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 25px;
+            box-shadow: 0 4px 15px rgba(0, 162, 255, 0.3);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .rdv-button:hover {
+            background-color: #0088cc;
+            transform: translateY(-3px);
+            color: white;
+        }
+        
+        /* Blog section */
+        .blog-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            background: white;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .blog-card-content {
+            padding: 20px;
+        }
+        
+        .blog-card-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .blog-card-excerpt {
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+        
+        .blog-card-link {
+            color: var(--secondary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .blog-card-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .display-4 {
+                font-size: 2.2rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            
+            .highlight {
+                font-size: 1.5rem;
+                padding: 8px 20px;
+            }
+            
+            .testimonial-card {
+                width: 300px;
+            }
+            
+            .rdv-button {
+                bottom: 90px;
+                left: 15px;
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .testimonial-card {
+                width: 280px;
+                margin: 0 10px;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "MontaiguRH",
+      "description": "Votre assistant RH externalisé. Solutions RH complètes pour TPE, PME et ETI.",
+      "url": "https://www.montaigurh.fr",
+      "telephone": "+33-7-82-13-18-82",
+      "email": "contact@montaigurh.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Montaigu",
+        "addressLocality": "Argentré",
+        "postalCode": "53210",
+        "addressCountry": "FR"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "serviceType": "Externalisation RH",
+      "priceRange": "€€",
+      "areaServed": "France"
+    }
+    </script>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" aria-label="MontaiguRH - Accueil">
+                <strong itemprop="name">Montaigu</strong><span class="text-warning">RH</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offres">Nos offres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipe">Notre équipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#temoignages">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog RH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pourquoi">Pourquoi nous choisir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" itemprop="mainContentOfPage">
+        <div class="container">
+            <div class="highlight">VOTRE ASSISTANT RH EXTERNALISÉ</div>
+            <h1 class="display-4 fw-bold mb-4">Une solution RH complète, flexible et abordable</h1>
+            <p class="lead mb-5">Libérez-vous des contraintes administratives et légales : notre service RH à la carte vous accompagne, simplement et à coût maîtrisé.</p>
+            <a href="#contact" class="btn btn-primary btn-lg me-3">Demander un audit gratuit</a>
+            <a href="#offres" class="btn btn-outline-light btn-lg">Découvrir nos offres</a>
+        </div>
+    </section>
+
+    <!-- Offres Section -->
+    <section id="offres" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Trouvez l'abonnement qui vous convient</h2>
+            
+            <div class="row">
+                <!-- Essentiel Card -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card offer-card essential">
+                        <div class="card-header">
+                            <h3>ESSENTIEL</h3>
+                            <div class="price">39€<small>/salarié</small></div>
+                            <p>La base juridique et administrative sécurisée</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><strong>Idéal pour les TPE et Start-ups</strong> qui souhaitent externaliser leur administration RH en toute sérénité.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Embauche & Sortie</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Conformité Juridique</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Gestion des Contrats</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Gestion Administrative</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Santé au Travail</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#offerModal" data-offer="ESSENTIEL" data-price="39">Choisir cette offre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Executive Card -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card offer-card executive">
+                        <div class="card-header">
+                            <h3>EXECUTIVE</h3>
+                            <div class="price">59€<small>/salarié</small></div>
+                            <p>L'expertise sociale et relationnelle</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><strong>Idéal pour les PME</strong> qui ont des instances représentatives du personnel (CSE) ou des besoins en gestion disciplinaire.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Tout l'ESSENTIEL, plus:</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Relations Sociales (IRP)</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Gestion Disciplinaire</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Mutuelle</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Alternance</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#offerModal" data-offer="EXECUTIVE" data-price="59">Choisir cette offre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Premium Card -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card offer-card premium">
+                        <div class="card-header">
+                            <h3>PREMIUM</h3>
+                            <div class="price">99€<small>/salarié</small></div>
+                            <p>Le partenaire stratégique RH complet</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><strong>Idéal pour les PME/ETI</strong> qui veulent externaliser toute leur fonction RH, du recrutement à la gestion des talents.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Tout l'EXECUTIVE, plus:</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Recrutement Complet</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Développement des Compétences</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Suivi Renforcé</li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Expertise Sociale Avancée</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#offerModal" data-offer="PREMIUM" data-price="99">Choisir cette offre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Notre équipe d'experts RH</h2>
+            <p class="text-center mb-5">Découvrez les professionnels qui accompagnent votre entreprise au quotidien</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="GHA.png" alt="Gérald Houzé - Fondateur & Directeur RH MontaiguRH" class="team-img">
+                        <h3>Gérald Houzé</h3>
+                        <p class="text-primary">Fondateur & Directeur RH</p>
+                        <p>20 ans d'expérience en gestion des ressources humaines, spécialiste en relations sociales et conformité juridique.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="SHA.jfif" alt="Suzanne Addario - Experte en Paie & Administration MontaiguRH" class="team-img">
+                        <h3>Suzanne Addario</h3>
+                        <p class="text-primary">Experte en Paie & Administration</p>
+                        <p>Experte-comptable de formation, elle maîtrise parfaitement la gestion de la paie et les obligations administratives.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="EMURVILLE.png" alt="Émilie Murville - Consultante Recrutement MontaiguRH" class="team-img">
+                        <h3>Émilie Murville</h3>
+                        <p class="text-primary">Consultante Recrutement</p>
+                        <p>Spécialiste du recrutement et de la marque employeur, elle accompagne les entreprises dans leur stratégie d'attraction des talents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="temoignages" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Ils nous font confiance</h2>
+            <p class="text-center mb-5">Découvrez les témoignages de nos clients satisfaits</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>MontaiguRH a révolutionné notre gestion RH. Nous avons pu externaliser toute notre administration et nous concentrer sur notre cœur de métier. Le service est réactif et professionnel.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4 class="mb-0">Pierre Dubois</h4>
+                            <p class="text-muted mb-0">Dirigeant de TechInnov</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Grâce à l'offre EXECUTIVE, nous avons pu gérer sereinement la mise en place du CSE et toutes les consultations obligatoires. Un gain de temps et de sérénité considérable.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4 class="mb-0">Marie Laurent</h4>
+                            <p class="text-muted mb-0">DRH de Concept & Cie</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Le pack Paie est une véritable bouffée d'air pour notre entreprise. Plus de soucis de déclarations ou de bulletins de paie. Tout est géré avec une précision remarquable.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4 class="mb-0">Nicolas Bernard</h4>
+                            <p class="text-muted mb-0">Gérant de Logistique Plus</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Un interlocuteur unique qui connaît parfaitement notre entreprise et nos besoins. La relation humaine fait toute la différence avec MontaiguRH.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4 class="mb-0">Sophie Martin</h4>
+                            <p class="text-muted mb-0">Directrice de QualiServices</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Nous avons choisi l'offre PREMIUM et c'est comme si nous avions un DRH à temps plein, sans le coût d'un salaire complet. Excellente expertise.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4 class="mb-0">Thomas Leroy</h4>
+                            <p class="text-muted mb-0">PDG de InnovTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button id="testimonialPrev" aria-label="Témoignage précédent"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <button id="testimonialNext" aria-label="Témoignage suivant"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Blog Section -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Actualités & Conseils RH</h2>
+        <p class="text-center mb-5">Découvrez nos derniers articles sur la gestion des ressources humaines</p>
+        
+        <div class="row">
+            <!-- Article 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*gfYrHIa4P9URK7lKqFGP3A.png" alt="Motiver et fidéliser ses collaborateurs sans budget élevé : 3 leviers accessibles aux PME" class="blog-card-img">
+                    <div class="blog-card-content">
+                        <div class="blog-card-date">10 septembre 2025</div>
+                        <h3 class="blog-card-title">Motiver et fidéliser ses collaborateurs sans budget élevé : 3 leviers accessibles aux PME</h3>
+                        <p class="blog-card-excerpt">La motivation et la fidélisation des collaborateurs représentent un défi majeur pour les petites entreprises..</p>
+                        <a href="https://medium.com/@aulnoit1/motiver-et-fid%C3%A9liser-ses-collaborateurs-sans-budget-%C3%A9lev%C3%A9-3-leviers-accessibles-aux-pme-c7df60621162" target="_blank" class="blog-card-link">Lire la suite <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="5 astuces pour améliorer votre marque employeur en 2023" class="blog-card-img">
+                    <div class="blog-card-content">
+                        <div class="blog-card-date">8 septembre 2023</div>
+                        <h3 class="blog-card-title">5 astuces pour améliorer votre marque employeur en 2023</h3>
+                        <p class="blog-card-excerpt">Comment attirer et fidéliser les talents dans un marché du travail de plus en plus concurrentiel.</p>
+                        <a href="https://medium.com/@montaigurh/5-astuces-pour-améliorer-votre-marque-employeur-en-2023" target="_blank" class="blog-card-link">Lire la suite <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="blog-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9i7IM1OO59HZAloDt_UcmQ.png" alt="PME et obligations légales : 5 points à vérifier absolument pour éviter les sanctions" class="blog-card-img">
+                    <div class="blog-card-content">
+                        <div class="blog-card-date">1 septembre 2025</div>
+                        <h3 class="blog-card-title">Télétravail : PME et obligations légales : 5 points à vérifier absolument pour éviter les sanctions</h3>
+                        <p class="blog-card-excerpt">La gestion d’une PME ne se limite pas à la performance économique ou au développement commercial. En tant que dirigeant, vous devez également veiller au respect des obligations légales</p>
+                        <a href="https://medium.com/@aulnoit1/pme-et-obligations-l%C3%A9gales-5-points-%C3%A0-v%C3%A9rifier-absolument-pour-%C3%A9viter-les-sanctions-196f6f45cf83" target="_blank" class="blog-card-link">Lire la suite <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="https://medium.com/@aulnoit1" target="_blank" class="btn btn-primary">Voir tous les articles</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Packs Section -->
+    <section id="packs" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Envie d'aller plus loin ? Ajoutez un Pack Complémentaire</h2>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pack-card">
+                        <h3><i class="fas fa-calculator me-2" aria-hidden="true"></i> Pack PAIE</h3>
+                        <p class="text-muted">35€/salarié/mois</p>
+                        <p>Externalisez l'intégralité de la gestion de la paie avec sérénité.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Établissement des bulletins de paie</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Gestion des arrêts maladie</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Gestion des congés et RTT</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Déclaration de la DSN</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pack-card">
+                        <h3><i class="fas fa-bullhorn me-2" aria-hidden="true"></i> Pack Communication RH</h3>
+                        <p class="text-muted">Prix sur devis</p>
+                        <p>Donnez de la visibilité à votre marque employeur et animez la vie interne.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Gestion des réseaux sociaux professionnels</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Création de supports d'information</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Alimentation de l'application et site internet</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Organisation d'événements</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pack-card">
+                        <h3><i class="fas fa-handshake me-2" aria-hidden="true"></i> Pack Intervention sur Site</h3>
+                        <p class="text-muted">Prix sur devis</p>
+                        <p>Bénéficiez d'une expertise RH de haut niveau directement dans votre entreprise.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Participation aux réunions du CSE</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Conduite des entretiens de licenciement</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Négociation d'accords</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Médiation et résolution de conflits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparaison Section -->
+    <section id="comparaison" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Tableau Récapitulatif des Services Inclus</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-bordered comparison-table">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Service</th>
+                            <th>ESSENTIEL</th>
+                            <th>EXECUTIVE</th>
+                            <th>PREMIUM</th>
+                            <th>PACK PAIE</th>
+                            <th>PACK COM</th>
+                            <th>PACK INTER</th>
+                            <th>Expertise à la Carte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gestion des Contrats & Embauche</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Documents Obligatoires</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Support RH Digital & Assistant</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Relations Sociales (CSE)</td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td class="on-request">🟠</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion de la Mutuelle</td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Recrutement (Support)</td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Formation & Alternance</td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gestion de la Paie</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Communication Interne</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Intervention sur Site</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="included">✅</td>
+                            <td class="on-request">🟠</td>
+                        </tr>
+                        <tr>
+                            <td>Expertise DRH Senior</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="on-request">🟠</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-center text-muted mt-3">✅ = Inclus dans l'abonnement | 🟠 = Prestation à la carte sur devis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi nous choisir -->
+    <section id="pourquoi" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Pourquoi Nous Choisir ?</h2>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Flexibilité</h3>
+                        <p>Payez ce dont vous avez besoin, sans engagement superflu.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Maîtrise des Coûts</h3>
+                        <p>Un prix fixe et prévisible pour la gestion courante.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Simplicité</h3>
+                        <p>Une plateforme intuitive et un interlocuteur dédié.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        </div>
+                        <h3>Expertise</h3>
+                        <p>Accédez à un réseau de DRH confirmés sans le coût d'un temps plein.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h3>Relation Humaine</h3>
+                        <p>Un interlocuteur unique qui vous connaît et comprend vos besoins.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="why-us-item">
+                        <div class="why-us-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Sérénité</h3>
+                        <p>Soyez certain de votre conformité juridique en permanence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-primary btn-lg">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2 class="mb-4">Prêt à simplifier votre gestion RH ?</h2>
+            <p class="lead mb-5">Bénéficiez d'1h d'audit de vos processus RH offerte sans engagement</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Formulaire modifié avec alternative email -->
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="nom" class="form-control form-control-lg" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" name="email" class="form-control form-control-lg" placeholder="Votre email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="entreprise" class="form-control form-control-lg" placeholder="Entreprise">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" name="telephone" class="form-control form-control-lg" placeholder="Téléphone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="besoins" class="form-control form-control-lg" rows="4" placeholder="Vos besoins spécifiques"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light btn-lg px-5 me-3">Demander mon audit gratuit</button>
+                            <a href="mailto:contact@montaigurh.fr?subject=Demande d'audit gratuit" class="btn btn-outline-light btn-lg">Nous contacter par email</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3>MontaiguRH</h3>
+                    <p>Votre partenaire pour une gestion RH externalisée, claire et sans surprise.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope me-2" aria-hidden="true"></i> contact@montaigurh.fr</p>
+                    <p><i class="fas fa-phone me-2" aria-hidden="true"></i> 07 82 13 18 82</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2023 MontaiguRH - Tous droits réservés</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#mentionsLegales">Mentions légales</a>
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#politiqueConfidentialite">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- RDV button -->
+    <a href="#" class="rdv-button" data-bs-toggle="modal" data-bs-target="#rdvModal">
+        <i class="fas fa-calendar-alt me-1"></i> Prendre RDV
+    </a>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0">Nous utilisons uniquement des cookies nécessaires au fonctionnement du site. Nous ne collectons aucune donnée personnelle sans votre consentement.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button class="btn btn-sm btn-outline-light" id="acceptCookies">J'accepte</button>
+                    <button class="btn btn-sm btn-link text-light" data-bs-toggle="modal" data-bs-target="#politiqueCookies">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour la sélection d'offre -->
+    <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="offerModalLabel">Souscrire à une offre</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="selected-offer">
+                        <h3 id="selectedOfferName">ESSENTIEL</h3>
+                        <p class="offer-details"><strong>Prix:</strong> <span id="selectedOfferPrice">39</span>€ par salarié</p>
+                        <p id="selectedOfferDescription">La base juridique et administrative sécurisée, idéale pour les TPE et Start-ups.</p>
+                    </div>
+                    
+                    <h3 class="mb-3">Ajouter des packs complémentaires</h3>
+                    
+                    <div class="pack-option">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="35" id="packPaie" data-pack="Pack PAIE">
+                            <label class="form-check-label" for="packPaie">
+                                <strong>Pack PAIE</strong> - 35€/salarié
+                            </label>
+                        </div>
+                        <p class="text-muted mb-0 mt-2">Externalisez l'intégralité de la gestion de la paie avec sérénité.</p>
+                    </div>
+                    
+                    <div class="pack-option">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="devis" id="packCom" data-pack="Pack Communication RH">
+                            <label class="form-check-label" for="packCom">
+                                <strong>Pack Communication RH</strong> - Prix sur devis
+                            </label>
+                        </div>
+                        <p class="text-muted mb-0 mt-2">Donnez de la visibilité à votre marque employeur et animez la vie interne.</p>
+                    </div>
+                    
+                    <div class="pack-option">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="devis" id="packInter" data-pack="Pack Intervention sur Site">
+                            <label class="form-check-label" for="packInter">
+                                <strong>Pack Intervention sur Site</strong> - Prix sur devis
+                            </label>
+                        </div>
+                        <p class="text-muted mb-0 mt-2">Bénéficiez d'une expertise RH de haut niveau directement dans votre entreprise.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h3>Récapitulatif de votre sélection</h3>
+                        <div class="summary-item">
+                            <span>Offre <span id="summaryOffer">ESSENTIEL</span>:</span>
+                            <span><span id="summaryOfferPrice">39</span>€/salarié</span>
+                        </div>
+                        <div id="packsSummary"></div>
+                        <div class="summary-item summary-total">
+                            <span>Total estimé:</span>
+                            <span id="totalPrice">39€/salarié</span>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h3 class="mb-3">Vos informations</h3>
+                    <form id="offerForm">
+                        <input type="hidden" name="offre" id="formOffre" value="ESSENTIEL">
+                        <input type="hidden" name="packs" id="formPacks" value="">
+                        <input type="hidden" name="prix" id="formPrix" value="39">
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" name="nom" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Votre email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" name="entreprise" placeholder="Entreprise" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control" name="telephone" placeholder="Téléphone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreSalaries" class="form-label">Nombre de salariés</label>
+                            <input type="number" class="form-control" id="nombreSalaries" name="nombreSalaries" min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Informations complémentaires</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Précisez vos besoins spécifiques..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" form="offerForm" class="btn btn-primary me-2">Envoyer ma demande</button>
+                    <a href="mailto:contact@montaigurh.fr?subject=Demande de devis pour offre ESSENTIEL" class="btn btn-outline-primary">Nous contacter par email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal RDV -->
+    <div class="modal fade" id="rdvModal" tabindex="-1" aria-labelledby="rdvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="rdvModalLabel">Prendre un rendez-vous</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="rdvForm">
+                        <input type="hidden" name="form-type" value="rendez-vous">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="rdvNom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="rdvNom" name="nom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="rdvEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="rdvEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="rdvTelephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="rdvTelephone" name="telephone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="rdvEntreprise" class="form-label">Entreprise</label>
+                                <input type="text" class="form-control" id="rdvEntreprise" name="entreprise">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="rdvSujet" class="form-label">Sujet du rendez-vous</label>
+                                <select class="form-control" id="rdvSujet" name="sujet" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="Audit RH gratuit">Audit RH gratuit</option>
+                                    <option value="Offre Essentiel">Offre Essentiel</option>
+                                    <option value="Offre Executive">Offre Executive</option>
+                                    <option value="Offre Premium">Offre Premium</option>
+                                    <option value="Pack Paie">Pack Paie</option>
+                                    <option value="Pack Communication">Pack Communication</option>
+                                    <option value="Pack Intervention">Pack Intervention</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="rdvDate" class="form-label">Date souhaitée</label>
+                                <input type="date" class="form-control" id="rdvDate" name="date" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="rdvHeure" class="form-label">Horaire</label>
+                                <select class="form-control" id="rdvHeure" name="heure" required>
+                                    <option value="">Sélectionnez</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rdvMessage" class="form-label">Message (optionnel)</label>
+                            <textarea class="form-control" id="rdvMessage" name="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" form="rdvForm" class="btn btn-primary">Envoyer la demande</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mentions Légales -->
+    <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="mentionsLegalesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="mentionsLegalesLabel">Mentions légales</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Éditeur du site</h3>
+                    <p>MontaiguRH<br>
+                    Micro-Entreprise<br>
+                    RCS Montaigu en cours<br>
+                    N° TVA : FR en cours</p>
+                    
+                    <h3>Adresse</h3>
+                    <p>Montaigu<br>
+                    53210 Argentre</p>
+                    
+                    <h3>Contact</h3>
+                    <p>Téléphone : 07 82 13 18 82<br>
+                    Email : contact@montaigurh.fr</p>
+                    
+                    <h3>Directeur de la publication</h3>
+                    <p>Gérald Houzé</p>
+                    
+                    <h3>Hébergement</h3>
+                    <p>Netlify Inc.<br>
+                    2325 3rd Street, Suite 296<br>
+                    San Francisco, California 94107<br>
+                    États-Unis</p>
+                    
+                    <h3>Propriété intellectuelle</h3>
+                    <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politique de Confidentialité -->
+    <div class="modal fade" id="politiqueConfidentialite" tabindex="-1" aria-labelledby="politiqueConfidentialiteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="politiqueConfidentialiteLabel">Politique de confidentialité</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Collecte des données</h3>
+                    <p>Les informations recueillies sur ce site résultent de la communication volontaire d'une adresse de courrier électronique lors du dépôt d'un message électronique. Les données recueillées sont exclusivement destinées à MontaiguRH.</p>
+                    
+                    <h3>Droit d'accès et de rectification</h3>
+                    <p>Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données qui vous concernent. Vous pouvez exercer ce droit en nous contactant à l'adresse : contact@montaigurh.fr</p>
+                    
+                    <h3>Cookies</h3>
+                    <p>Notre site n'utilise que des cookies strictement nécessaires à son fonctionnement. Aucun cookie de suivi ou de publicité n'est utilisé. Les données collectées via notre formulaire de contact sont transmises via le service Formspree et ne sont pas stockées sur nos serveurs.</p>
+                    
+                    <h3>Responsable du traitement</h3>
+                    <p>Le responsable du traitement des données est MontaiguRH, qui peut être contacté à l'adresse indiquée dans les mentions légales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politique des Cookies -->
+    <div class="modal fade" id="politiqueCookies" tabindex="-1" aria-labelledby="politiqueCookiesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="politiqueCookiesLabel">Politique des cookies</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Utilisation des cookies</h3>
+                    <p>Notre site n'utilise que des cookies strictement nécessaires à son fonctionnement. Ces cookies techniques ne requièrent pas de consentement préalable.</p>
+                    
+                    <h3>Cookies utilisés</h3>
+                    <p>Nous utilisons uniquement :</p>
+                    <ul>
+                        <li>Des cookies de session pour le bon fonctionnement du site</li>
+                        <li>Des cookies de préférences pour mémoriser vos choix concernant les cookies</li>
+                    </ul>
+                    
+                    <h3>Absence de cookies tiers</h3>
+                    <p>Nous n'utilisons aucun cookie de suivi, de mesure d'audience ou de publicité. Votre navigation sur notre site est totalement privée.</p>
+                    
+                    <h3>Gestion des cookies</h3>
+                    <p>Vous pouvez configurer votre navigateur pour refuser les cookies techniques, mais certaines fonctionnalités du site pourraient alors être altérées.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const offerModal = document.getElementById('offerModal');
+            const packCheckboxes = document.querySelectorAll('.form-check-input');
+            const cookieBanner = document.getElementById('cookieBanner');
+            const testimonialsTrack = document.getElementById('testimonialsTrack');
+            const testimonialPrev = document.getElementById('testimonialPrev');
+            const testimonialNext = document.getElementById('testimonialNext');
+            const backToTop = document.getElementById('backToTop');
+            
+            let currentTestimonial = 0;
+            const testimonialCount = document.querySelectorAll('.testimonial-card').length;
+            
+            // Gestion de la bannière cookies
+            if (!localStorage.getItem('cookiesAccepted')) {
+                cookieBanner.style.display = 'block';
+            }
+            
+            document.getElementById('acceptCookies').addEventListener('click', function() {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.style.display = 'none';
+            });
+            
+            // Navigation des témoignages
+            testimonialPrev.addEventListener('click', function() {
+                if (currentTestimonial > 0) {
+                    currentTestimonial--;
+                    updateTestimonialPosition();
+                }
+            });
+            
+            testimonialNext.addEventListener('click', function() {
+                if (currentTestimonial < testimonialCount - 1) {
+                    currentTestimonial++;
+                    updateTestimonialPosition();
+                }
+            });
+            
+            function updateTestimonialPosition() {
+                const cardWidth = document.querySelector('.testimonial-card').offsetWidth + 30; // width + margin
+                testimonialsTrack.style.transform = `translateX(-${currentTestimonial * cardWidth}px)`;
+            }
+            
+            // Back to top button
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Définir la date minimale pour le champ de date à aujourd'hui
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('rdvDate').setAttribute('min', today);
+            
+            // Mise à jour des informations de l'offre sélectionnée
+            offerModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const offer = button.getAttribute('data-offer');
+                const price = button.getAttribute('data-price');
+                
+                document.getElementById('selectedOfferName').textContent = offer;
+                document.getElementById('selectedOfferPrice').textContent = price;
+                document.getElementById('summaryOffer').textContent = offer;
+                document.getElementById('summaryOfferPrice').textContent = price;
+                document.getElementById('formOffre').value = offer;
+                document.getElementById('formPrix').value = price;
+                
+                // Mise à jour de la description
+                let description = "";
+                if (offer === "ESSENTIEL") {
+                    description = "La base juridique et administrative sécurisée, idéale pour les TPE et Start-ups.";
+                } else if (offer === "EXECUTIVE") {
+                    description = "L'expertise sociale et relationnelle, idéale pour les PME avec instances représentatives du personnel.";
+                } else if (offer === "PREMIUM") {
+                    description = "Le partenaire stratégique RH complet, idéal pour externaliser toute la fonction RH.";
+                }
+                document.getElementById('selectedOfferDescription').textContent = description;
+                
+                updateSummary();
+            });
+            
+            // Gestion des changements de sélection des packs
+            packCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateSummary);
+            });
+            
+            // Mise à jour du récapitulatif
+            function updateSummary() {
+                const offerPrice = parseInt(document.getElementById('selectedOfferPrice').textContent);
+                let total = offerPrice;
+                let packsHTML = '';
+                let packsList = [];
+                
+                packCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const packName = checkbox.getAttribute('data-pack');
+                        const packValue = checkbox.value;
+                        
+                        if (packValue === 'devis') {
+                            packsHTML += `<div class="summary-item"><span>${packName}:</span> <span>Sur devis</span></div>`;
+                            packsList.push(packName + ' (sur devis)');
+                        } else {
+                            const packPrice = parseInt(packValue);
+                            total += packPrice;
+                            packsHTML += `<div class="summary-item"><span>${packName}:</span> <span>${packPrice}€/salarié</span></div>`;
+                            packsList.push(packName + ' (' + packPrice + '€/salarié)');
+                        }
+                    }
+                });
+                
+                document.getElementById('packsSummary').innerHTML = packsHTML;
+                document.getElementById('totalPrice').textContent = total + '€/salarié';
+                document.getElementById('formPacks').value = packsList.join(', ');
+            }
+            
+            // Gestion de la soumission des formulaires avec alternative pour Kaspersky
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Récupération des données du formulaire
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Tentative d'envoi via Formspree
+                fetch('https://formspree.io/f/xpwjqeeo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Votre message a été envoyé avec succès !');
+                        this.reset();
+                    } else {
+                        throw new Error('Erreur lors de l\'envoi du formulaire');
+                    }
+                })
+                .catch(error => {
+                    // Alternative si Formspree est bloqué
+                    alert('Votre antivirus peut bloquer l\'envoi du formulaire. Vous pouvez nous contacter directement par email à contact@montaigurh.fr');
+                    console.error('Erreur:', error);
+                });
+            });
+            
+            document.getElementById('offerForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Récupération des données du formulaire
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Ajout des informations d'offre
+                data.offre = document.getElementById('formOffre').value;
+                data.packs = document.getElementById('formPacks').value;
+                data.prix = document.getElementById('formPrix').value;
+                
+                // Tentative d'envoi via Formspree
+                fetch('https://formspree.io/f/xpwjqeeo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Votre demande a été envoyée avec succès !');
+                        this.reset();
+                        // Fermer le modal
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('offerModal'));
+                        modal.hide();
+                    } else {
+                        throw new Error('Erreur lors de l\'envoi du formulaire');
+                    }
+                })
+                .catch(error => {
+                    // Alternative si Formspree est bloqué
+                    alert('Votre antivirus peut bloquer l\'envoi du formulaire. Vous pouvez nous contacter directement par email à contact@montaigurh.fr');
+                    console.error('Erreur:', error);
+                });
+            });
+            
+            // Gestion du formulaire de rendez-vous
+            document.getElementById('rdvForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Récupération des données du formulaire
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Tentative d'envoi via Formspree
+                fetch('https://formspree.io/f/xpwjqeeo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Votre demande de rendez-vous a été envoyée avec succès ! Nous vous contacterons rapidement pour confirmer.');
+                        this.reset();
+                        // Fermer le modal
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('rdvModal'));
+                        modal.hide();
+                    } else {
+                        throw new Error('Erreur lors de l\'envoi du formulaire');
+                    }
+                })
+                .catch(error => {
+                    // Alternative si Formspree est bloqué
+                    alert('Votre antivirus peut bloquer l\'envoi du formulaire. Vous pouvez nous contacter directement par email à contact@montaigurh.fr');
+                    console.error('Erreur:', error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
